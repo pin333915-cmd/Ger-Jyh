@@ -1,0 +1,6 @@
+{
+  "name": "格致高中圖書館訊",
+  "description": "格致高中圖書館最新一期電子通訊（第327期），主題為青春不散場・夢想正啟航，提供畢業季推薦書單、閱讀排行榜、暑期閱讀預告與自主學習認證等互動板塊。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

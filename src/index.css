@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Noto Serif TC", "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Noto Sans TC", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-brand-green-50: #FDFCFB;
+  --color-brand-green-100: #1A1A1A;
+  --color-brand-green-150: #F3F1EF;
+  --color-brand-green-600: #1A1A1A;
+  --color-brand-green-650: #1A1A1A;
+  --color-brand-green-700: #2D2D2D;
+  --color-brand-green-800: #2A2A2A;
+  --color-brand-green-900: #1A1A1A;
+  --color-brand-green-950: #151515;
+  
+  --color-brand-gold-50: #FDFCFB;
+  --color-brand-gold-100: #EBEAE6;
+  --color-brand-gold-200: #1A1A1A;
+  --color-brand-gold-500: #1A1A1A;
+  --color-brand-gold-600: #1A1A1A;
+}
+
+@layer base {
+  body {
+    background-color: #FDFCFB;
+    color: #1A1A1A;
+    font-family: var(--font-sans);
+  }
+
+  /* Structural borders, sharp corners, and solid raw shadows instead of rounded blobs */
+  .rounded-\[3rem\], 
+  .rounded-\[2\.5rem\], 
+  .rounded-\[2rem\], 
+  .rounded-3xl, 
+  .rounded-2xl, 
+  .rounded-xl, 
+  .rounded-lg {
+    border-radius: 0px !important;
+    border: 2px solid #1A1A1A !important;
+  }
+
+  .rounded-md {
+    border-radius: 0px !important;
+    border: 1px solid #1A1A1A !important;
+  }
+
+  /* Make sure small rounded states like pills still look good or are square-edged */
+  .rounded-full {
+    border-radius: 0px !important;
+    border: 1px solid #1A1A1A !important;
+  }
+
+  /* Solid artistic offset shadows */
+  .shadow-xl, 
+  .shadow-2xl, 
+  .shadow-lg, 
+  .shadow-md {
+    box-shadow: 6px 6px 0px 0px #1A1A1A !important;
+  }
+
+  .shadow-sm, 
+  .shadow-xs {
+    box-shadow: 2px 2px 0px 0px #1A1A1A !important;
+  }
+
+  /* Background overrides to ivory paper texture */
+  .bg-white {
+    background-color: #FDFCFB !important;
+  }
+
+  .bg-brand-green-50\/50, .bg-brand-gold-50\/20, .bg-brand-gold-50\/50, .bg-brand-green-100\/30 {
+    background-color: #F8F6F2 !important;
+  }
+
+  /* Grid boundaries for that gorgeous editorial magazine layout */
+  hr, .border-t, .border-b, .border-r, .border-l, .border {
+    border-color: #1A1A1A !important;
+  }
+
+  /* Typography enhancement for the authentic Artistic Flair experience */
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif) !important;
+  }
+
+  /* Custom subtle background noise pattern to resemble rich card stock paper */
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background-image: radial-gradient(#1a1a1a 0.5px, transparent 0.5px);
+    background-size: 24px 24px;
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 9999;
+  }
+}
